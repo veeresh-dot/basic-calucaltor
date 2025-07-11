@@ -1,0 +1,66 @@
+/* Center the calculator in the middle of the screen */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+/* Calculator box style */
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Display where numbers/results show up */
+#display {
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* Buttons layout - 4 columns */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+/* General button style */
+.btn {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #eee;
+}
+
+/* Change button color on hover */
+.btn:hover {
+  background: #ddd;
+}
+
+/* Operator buttons */
+.operator {
+  background-color: #f9c291;
+}
+
+/* Equals button */
+#equals {
+  background-color: #78e08f;
+}
+
+/* Clear button spans full row */
+#clear {
+  grid-column: span 4;
+  background-color: #e55039;
+  color: white;
+}
